@@ -1,0 +1,10 @@
+numero = int(input())
+indice = int(input())
+lista = []
+for _ in range(numero):
+    lista.append(list(map(int,input().split())))
+
+lista.sort(key= lambda x: (x[indice], sum(x)))
+
+for funfar in lista:
+    print(*funfar)
