@@ -1,0 +1,4 @@
+num = int(input())
+for i in range(num):
+    var = input()
+    print(f'Raimundo Nonato {var}')
