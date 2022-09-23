@@ -1,0 +1,11 @@
+lista = map(int, input().split())
+
+divisor = int(input())
+
+divisiveis = []
+
+for elemento in lista:
+    if elemento % divisor == 0:
+        divisiveis.append(elemento)
+
+print(*divisiveis)
