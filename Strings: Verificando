@@ -1,0 +1,5 @@
+var = input()
+if ',' in var:
+    print('passed')
+else:
+    print('failed')
