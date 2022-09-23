@@ -1,0 +1,9 @@
+def convert(listeta):
+    dicioneta = {}
+    for tupleta in listeta:
+        if tupleta[0] in dicioneta:
+            dicioneta[tupleta[0]].append(tupleta[1])
+        else:
+            dicioneta[tupleta[0]] = [tupleta[1]]
+            
+    return dicioneta
