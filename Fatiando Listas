@@ -1,0 +1,6 @@
+indice = input().split()
+começo, fim = map(int, input().split())
+var = indice[começo:fim]
+var = str(var)
+var = var.replace("'","")
+print(var)
