@@ -1,0 +1,23 @@
+SomaDosSalarios = 0
+SalarioMaior = 0
+NomeSalarioMaior = 0
+SalarioMenor = 1000000000
+NomeSalarioMenor = 0
+n = int(input())
+if n == 0:
+    print('Não tem sálario nem media nem nada')
+else:    
+    for lista in range(n):
+        nome,salario = input().split(',')
+        salario = float(salario)
+        if salario > SalarioMaior:
+            SalarioMaior = salario
+            NomeSalarioMaior = nome
+        if salario < SalarioMenor:    
+            SalarioMenor = salario
+            NomeSalarioMenor = nome
+        SomaDosSalarios+=salario
+        media = SomaDosSalarios/n    
+print(f'Nome de quem tem o maior salário: {NomeSalarioMaior} = {SalarioMaior:.2f}')
+print(f'Nome de quem tem o menor salário: {NomeSalarioMenor} = {SalarioMenor:.2f}')
+print(f'A média salarial da empresa é: {media:.2f}')
