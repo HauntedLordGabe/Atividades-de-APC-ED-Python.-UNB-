@@ -1,0 +1,6 @@
+def erase(listeta):
+    listeta_fim = []
+    for tupleta in listeta:
+        if len(tupleta) != 0:
+            listeta_fim.append(tupleta)
+    return listeta_fim
