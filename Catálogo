@@ -1,0 +1,26 @@
+preços = input().split()
+compras = input().split()
+dicioneta = {}
+fim = 0
+
+for i in range(len(preços)):
+    if i == len(preços)-1:
+        pass
+    else:
+        if '.' in preços[i] or preços[1].isnumeric() == True:
+            pass
+        else:
+            dicioneta[preços[i]] = float(preços[i+1])
+
+for x in range(len(compras)):
+    if x == len(compras)-1:
+        pass
+    else:
+        if compras[x].isnumeric() == True:
+            pass
+        else:
+            fim += dicioneta[compras[x]] * float(compras[x+1])
+        
+
+print(f'R$ {fim:.2f}')
+
