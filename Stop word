@@ -1,0 +1,8 @@
+var1 = input()
+var2 = input()
+
+if var2 in var1:
+    var1 = var1.replace(var2,'*')
+    print(var1)
+else:
+    print('tudo certo :)')
