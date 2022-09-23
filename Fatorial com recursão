@@ -1,0 +1,7 @@
+def fatorial(n):
+    if n == 1:
+        return 1
+    else:
+        var = n*fatorial(n-1)
+        return var
+    print(f'O fatorial de {n} é {var}.')
