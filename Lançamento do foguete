@@ -1,0 +1,7 @@
+def func(n):
+    if n == 0:
+        return 0
+    else:
+        n = n - 1
+        print(f'O foguete vai lançar em {n} segundos...')
+        func(n)
