@@ -1,0 +1,4 @@
+var = input()
+DoisPrimeiros = var[0:2]
+DoisUltimos = var[-2:]
+print(f'{DoisPrimeiros}{DoisUltimos}')
