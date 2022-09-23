@@ -1,0 +1,10 @@
+def banner(n):
+    resto = n % 2
+    if resto == 0 and n < 0:
+        print ('. . . . . . . . . .')
+    elif resto == 1 and n < 0:
+        print ('= = = = = = = = = =')
+    if resto == 0 and n > 0:
+        print ('| | | | | | | | | |')
+    elif resto == 1 and n > 0:
+        print ('- - - - - - - - - -')
