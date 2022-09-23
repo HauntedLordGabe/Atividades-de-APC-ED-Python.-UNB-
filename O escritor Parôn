@@ -1,0 +1,7 @@
+def paron(lista):
+    list = []
+    for palavra in lista:
+        quantidade = sum(palavra.count(vogal) for vogal in 'aeiouAEIOU')
+        if quantidade % 2 == 0:
+            list.append(palavra)
+    return list
