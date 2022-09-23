@@ -1,0 +1,6 @@
+def cachorro():
+    print('au auuuuu acordei')
+def gato(horas):
+    print('miaaaaau, acordei')
+    print(f'acorda cachorro, sao {horas} horas da manha')
+    cachorro() 
