@@ -1,0 +1,9 @@
+num = int(input())
+lista = []
+for i in range(num):
+    var = input()
+    lista.append(var)
+    lista.sort(reverse=True)
+for l in lista:
+    print(l)
+    
