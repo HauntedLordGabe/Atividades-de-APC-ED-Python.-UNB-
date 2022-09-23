@@ -1,0 +1,9 @@
+frase = input()
+cont = 0
+
+for i in frase:
+    if i.isdigit():
+        cont += 1
+
+print(cont)
+
